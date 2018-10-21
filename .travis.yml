@@ -6,15 +6,15 @@ before_install:
   - env
   - choco.exe config list
   - choco.exe install php --version 7.2.0
-  - PATH=C:\tools\php;%PATH%
+  - PATH=%ChocolateyToolsLocation%\php;%PATH%
   - env
   #- refreshenv.exe
   #- php.exe -v
   #- php.exe -i
   - ls 'C:\tools\'
   - ls 'C:\tools\php72\'
-  - 'C:\Tools\php72\php.exe -v'
-  - 'C:\Tools\php72\php.exe -i'
+  - %ChocolateyToolsLocation%\php72\php.exe -v
+  - %ChocolateyToolsLocation%\php72\php.exe -i
   - choco.exe install composer
   #- refreshenv.exe
   #- composer.exe --version
