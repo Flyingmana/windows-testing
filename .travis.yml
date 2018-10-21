@@ -6,6 +6,7 @@ before_install:
   - env
   - choco.exe config list
   - choco.exe install php --version 7.2.0
+  - PATH=C:\tools\php;%PATH%
   - env
   #- refreshenv.exe
   #- php.exe -v
