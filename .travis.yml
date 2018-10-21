@@ -4,6 +4,7 @@ language: bash
 
 before_install:
   - env
+  - ls %TEMP%
   - choco.exe config list
   - choco.exe install php --version 7.2.0
   - PATH=%ChocolateyToolsLocation%\php;%PATH%
