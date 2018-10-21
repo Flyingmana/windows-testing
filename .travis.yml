@@ -4,9 +4,11 @@ language: bash
 
 before_install:
   - choco.exe install php --version 7.2.0
+  - refreshenv
   - php.exe -v
   - php.exe -i
   - choco.exe install composer
+  - refreshenv
   - composer.exe --version
 
 script: echo "nearly"
