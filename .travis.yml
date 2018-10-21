@@ -3,6 +3,8 @@ os: windows
 language: bash
 
 before_install:
+  - apt update
+  - apt-get build-dep php-cli
   - git clone git://github.com/phpenv/phpenv.git ~/.phpenv
   - export PATH="$HOME/.phpenv/libexec:$PATH"
   - eval "$(phpenv init -)"
