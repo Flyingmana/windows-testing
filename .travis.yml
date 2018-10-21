@@ -3,14 +3,15 @@ os: windows
 language: bash
 
 before_install:
+  - choco.exe config get cacheLocation 
   - choco.exe install php --version 7.2.0
   #- refreshenv.exe
   #- php.exe -v
   #- php.exe -i
-  - ls C:\\tools\
-  - ls C:\\tools\php72\
-  - C:\\tools\php72\php.exe -v
-  - C:\\tools\php72\php.exe -i
+  - ls 'C:\tools\'
+  - ls 'C:\tools\php72\'
+  - 'C:\tools\php72\php.exe -v'
+  - 'C:\tools\php72\php.exe -i'
   - choco.exe install composer
   #- refreshenv.exe
   #- composer.exe --version
