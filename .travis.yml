@@ -15,7 +15,7 @@ before_install:
   - ls 'C:\tools\php72\'
   - %ChocolateyToolsLocation%\php72\php.exe -v
   - %ChocolateyToolsLocation%\php72\php.exe -i
-  - choco.exe install composer
+  # - choco.exe install composer
   #- refreshenv.exe
   #- composer.exe --version
 
