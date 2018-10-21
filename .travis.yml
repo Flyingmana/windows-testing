@@ -7,6 +7,8 @@ before_install:
   #- refreshenv.exe
   #- php.exe -v
   #- php.exe -i
+  - ls C:\\tools\
+  - ls C:\\tools\php72\
   - C:\\tools\php72\php.exe -v
   - C:\\tools\php72\php.exe -i
   - choco.exe install composer
