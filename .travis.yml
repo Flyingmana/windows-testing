@@ -4,7 +4,9 @@ language: bash
 
 before_install:
   - choco.exe install php --version 7.2.0
-  - php -v
-  - php -i
+  - php.exe -v
+  - php.exe -i
+  - choco.exe install composer
+  - composer.exe --version
 
 script: echo "nearly"
